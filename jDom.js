@@ -194,11 +194,13 @@ module.exports = DOMNodeCollection;
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
+//TODO: remove jquery script from index.html after testing
+
 const DOMNodeCollection = __webpack_require__(0);
 
 const docReadyQueue = [];
 
-window.$l = function(arg) {
+window.$j = function(arg) {
   switch (typeof arg) {
     case 'function':
       registerDocReadyCallback(arg);
@@ -214,11 +216,11 @@ window.$l = function(arg) {
   }
 };
 
-$l.extend  = function (...args) {
+$j.extend  = function (...args) {
   return Object.assign(...args);
 };
 
-$l.ajax = options => {
+$j.ajax = options => {
   const request = new XMLHttpRequest();
   const defaults = {
     contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
@@ -228,7 +230,7 @@ $l.ajax = options => {
     error: () => {},
     data: {},
   };
-  options = $l.extend(defaults, options);
+  options = $j.extend(defaults, options);
   options.method = options.method.toUpperCase();
 
   if (options.method === "GET"){
