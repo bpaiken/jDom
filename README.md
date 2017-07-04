@@ -14,7 +14,7 @@ The easiest way to use jDom is to simply insert the webpack output `jDom.js` int
 </head>
 ```
 
-##API
+## API
 [`$j`](#j)  
 
 [DOM Traversal](#dom-traversal)  
@@ -42,34 +42,34 @@ The easiest way to use jDom is to simply insert the webpack output `jDom.js` int
 
 ### DOM Traversal
 
-#### each
+#### `each`
 
-#### children
+#### `children`
 
-#### parent
+#### `parent`
 
 ### DOM Manipulation
 
-#### html
+#### `html`
 
-#### empty
+#### `empty`
 
-#### append
+#### `append`
 
-#### remove
+#### `remove`
 
-#### attr
+#### `attr`
 
-#### addClass
+#### `addClass`
 
-#### removeClass
+#### `removeClass`
 
-#### toggleClass
+#### `toggleClass`
 
 ### Event Listeners
 
-#### on
+#### `on`
 
-#### off
+#### `off`
 
 ### $j.ajax
